@@ -45,6 +45,40 @@
       .no-border-section {
         border: none;
       }
+
+      figcaption {
+        font-style: italic;
+        text-align: center;
+      }
+
+      .team-img {
+        border-radius: 50%;
+        height: 150px;
+        width: 150px;
+        position: absolute;
+        margin-top: 25px;
+      }
+
+      .team-content-span {
+        margin-left: 175px;
+        margin-top: 25px;
+        display: inline-block;
+      }
+
+    @media (max-width: 1000px) {
+      .team-img {
+        border-radius: 50%;
+        height: 100px;
+        width: 100px;
+        margin-top: 25px;
+      }
+      .team-content-span {
+        margin-left: 125px;
+        margin-top: 25px;
+        display: inline-block;
+      }
+    }
+
     </style>
   </head>
 
@@ -79,7 +113,7 @@
                 <li><a href="#marketplace-next-steps">Next Steps</a></li>
               </ul>
             <li>
-              <a href="#playbook">Procurement Playbook</a></li>
+              <a href="#playbook">Playbook</a></li>
               <ul class="sectlevel2">
                 <li><a href="#playbook-issues">The Issues</a></li>
                 <li><a href="#playbook-user-research">User Research</a></li>
@@ -90,14 +124,14 @@
                 <li><a href="#playbook-next-steps">Next Steps</a></li>
               </ul>
             <li>
-              <a href="#purchasing">Purchasing</a>
+              <a href="#inventory">Inventory</a>
               <ul class="sectlevel2">
-                <li><a href="#purchasing-issues">The Issues</a></li>
-                <li><a href="#purchasing-user-research">User Research</a></li>
-                <li><a href="#purchasing-metrics">Metrics &amp; Goals</a></li>
-                <li><a href="#purchasing-prototyping">Prototyping</a></li>
-                <li><a href="#purchasing-product">Products</a></li>
-                <li><a href="#purchasing-next-steps">Next Steps</a></li>
+                <li><a href="#inventory-issues">The Issues</a></li>
+                <li><a href="#inventory-user-research">User Research</a></li>
+                <li><a href="#inventory-metrics">Metrics &amp; Goals</a></li>
+                <li><a href="#inventory-prototyping">Prototyping</a></li>
+                <li><a href="#inventory-product">Products</a></li>
+                <li><a href="#inventory-next-steps">Next Steps</a></li>
               </ul>
             </li>
             <li><a href="#events">Events</a></li>
@@ -162,7 +196,7 @@
               </tr>
               <tr>
                 <td>
-                  <strong>Inventory:</strong>
+                  <strong>Inventory</strong>
                   <ul>
                     <li>It is hard for city staff to find information about existing contracts</li>
                     <li>The contract renewal process is lengthy, difficult, and non-transparent.</li>
@@ -189,22 +223,22 @@
 
         <section id="people">
           <h2>Team</h2>
-
-          <p>
-            Patrick is a civic hacker who likes to understand problems through maps and data visualizations. Before Code for America, Patrick managed open geographic data and spatial applications as a GIS Analyst with the City of Philadelphia's Office of Innovation &amp; Technology.
-          </p>
-
-          <p>
-            Shelly is a designer and researcher dedicated to improving public services. Recently, she has worked on user-friendly food stamp applications and guides for New Yorkers applying for basic IDs. Previously, she has consulted for a variety of non-profits and led UX projects for startup teams. She holds design degrees from Stanford and the School of Visual Arts.
-          </p>
-
-          <p>
-            Ben is a software developer originally from Pittsburgh. After graduating from the University of Chicago with a degree in Public Policy, Ben worked on the digital and data teams for the re-election campaign for Obama 2012. Following that, Ben joined Spotify and worked on both Analytics and Data Engineering teams.
-          </p>
-
-          <p>
-            Laura is currently the Analytics and Strategy Manager for the City of Pittsburgh. Previously, she served as a 2013 Code for America Fellow, and a Presidential Management Fellow at the Department of Housing and Urban Development, where she worked on agency performance management and developed a place-based data driven review process. Prior to that she worked on a community data and mapping system in Pittsburgh, PA.
-          </p>
+              <img src="http://www.codeforamerica.org/media/images/people/patrick-hammons.jpg" class="team-img">
+              <span class="team-content-span">
+                Patrick is a civic hacker who likes to understand problems through maps and data visualizations. Before Code for America, Patrick managed open geographic data and spatial applications as a GIS Analyst with the City of Philadelphia's Office of Innovation &amp; Technology.
+              </span>
+              <img src="http://www.codeforamerica.org/media/images/people/shelly-ni.jpg" class="team-img">
+              <span class="team-content-span">
+                Shelly is a designer and researcher dedicated to improving public services. Recently, she has worked on user-friendly food stamp applications and guides for New Yorkers applying for basic IDs. Previously, she has consulted for a variety of non-profits and led UX projects for startup teams. She holds design degrees from Stanford and the School of Visual Arts.
+              </span>
+              <img src="http://www.codeforamerica.org/media/images/people/ben-smithgall.jpg" class="team-img">
+              <span class="team-content-span">
+                Ben is a software developer originally from Pittsburgh. After graduating from the University of Chicago with a degree in Public Policy, Ben worked on the digital and data teams for the re-election campaign for Obama 2012. Following that, Ben joined Spotify and worked on both Analytics and Data Engineering teams.
+              </span>
+              <img src="assets/laura-meixell.jpg" class="team-img">
+              <span class="team-content-span">
+                Laura is currently the Analytics and Strategy Manager for the City of Pittsburgh. Previously, she served as a 2013 Code for America Fellow, and a Presidential Management Fellow at the Department of Housing and Urban Development, where she worked on agency performance management and developed a place-based data driven review process. Prior to that she worked on a community data and mapping system in Pittsburgh, PA.
+              </span>
         </section>
 
 
@@ -217,7 +251,7 @@
 
             <p>Businesses can find out about work opportunities through the following official channels:
               <ul>
-                <li>The classifieds section of local newspapers, which are the only required public advertising channel for work opportunities over $30,000. Businesses have to keep checking the classifieds because there is no way to subscribe.</li>
+                <li>The <a href="http://classmart.post-gazette.com/pittsburgh/bids-and-proposals/search">classifieds section of local newspapers</a>, which are the only required public advertising channel for work opportunities over $30,000. Businesses have to keep checking the classifieds because there is no way to subscribe.</li>
                 <li>The Office of Management and Budget&rsquo;s <a href="http://pittsburghpa.gov/omb/contract-bids">website</a>, which posts some professional service opportunities. There is no way to subscribe to the site, and the opportunities posted here are not comprehensive.</li>
                 <li>The <a href="http://www.govbids.com/scripts/PAPG/public/home1.asp">Pennsylvania Purchasing Group&rsquo;s site</a>, which lists opportunities to sell commodities and non-professional services. Unfortunately, details about the opportunities are hidden behind a lengthy sign-up process that you can see below. To subscribe, businesses must pay a monthly fee to get email notifications.</li>
               </ul>
@@ -308,6 +342,8 @@
               We have gathered feedback about the content and design of such a site from city departments, the procurement team, as well as local businesses and chambers of commerce. Feedback has been positive enough that we are currently working to launch a minimum viable product (MVP) of the site in July. We learned from user testing sessions with business owners that they would sign up for the mailing list even if there were no opportunities currently posted. <a href="http://pittsburgh-purchasing.herokuapp.com/opportunities/">The MVP is up and running.</a>
             </p>
 
+            <img src="assets/beacon.gif"><figcaption>Learning about upcoming opportunities with Beacon.</figcaption>
+
             <p>Core feature list:
               <ul>
                 <li>Friendly language that encourages businesses to sign up to be notified of city opportunities</li>
@@ -343,7 +379,7 @@
         </section>
 
         <section id="playbook" class="no-border-section">
-          <h2>Procurement Playbook</h2>
+          <h2>Playbook</h2>
           <section id="playbook-issues">
             <h3>The Issues</h3>
 
@@ -401,6 +437,8 @@
 
             <p>Another idea we had was surrounding the act of document creation itself. What if the law department and OMB could create and adapt document templates that then became easy-to-fill-out forms? We built a prototype of this tool, which we called Template Maker.</p>
 
+            <img src="assets/RFP_template.gif"><figcaption>Document creation via our Template Maker prototype</figcaption>
+
             <p>With Template Maker, our city partners in the law department could create a central database of internal procurement documents. Standardized document templates would become forms, which could remove a lot of the confusion departments face while drafting Requests for Proposals, as well as other bid documents, resulting in better documents and less back and forth during the final contracting process.</p>
 
             <p>Overall response to Template Maker was positive. The idea of a making templates that then made forms was a bit abstract, but the concept typically settled in during testing. OMB as well as the law department agreed that templates were central to a good procurement experience, which allowed for fruitful conversations.</p>
@@ -417,6 +455,8 @@
             <h3>Product</h3>
 
             <p>Focusing on the larger process, we are building out our click-through tool as the place to go when you want to adopt a contract or buy something off-contract in the City of Pittsburgh. We are calling the tool <strong>Atlas</strong>, as it is at once a guide through procurement procedures as well as a central repository for the processes that support procurement as a whole.</p>
+
+            <img src="assets/atlas.gif"><figcaption>A guided tour through procurement with Atlas.</figcaption>
 
             <p>Core feature list:
               <ul>
@@ -443,9 +483,9 @@
           </section>
         </section>
 
-        <section id="purchasing" class="no-border-section">
-          <h2>Purchasing</h2>
-          <section id="purchasing-issues">
+        <section id="inventory" class="no-border-section">
+          <h2>Inventory</h2>
+          <section id="inventory-issues">
             <h3>The Issues</h3>
 
             <p><strong>It is hard for city staff to find information about existing contracts.</strong></p>
@@ -457,7 +497,7 @@
             <p>The responsibility for managing 300+ contracts through a 13-stage, five department renewal process falls on two purchasing agents. This renewal can take four months or longer to complete. There are many opportunities for a contract to be held up along the way, from the City&rsquo;s Equal Opportunity Review Commission to Allegheny County&rsquo;s Purchasing Department. Using departments who need information about these contracts often resort to calling the purchasing agents directly to ask about status.</p>
           </section>
 
-          <section id="purchasing-user-research">
+          <section id="inventory-user-research">
             <h3>Learnings from User Research</h3>
 
             <p>
@@ -483,13 +523,13 @@
             <p>It is easy for contracts to slip through the cracks during the renewal process, which can lead to major complications down the road. One story we heard was that the fire department was not contacted about renewing a contract they used to purchase gloves. As a result, the opportunity that was sent to the business community had the wrong type of gloves. The fire department is now forced to buy gloves separately as a result. The work puts a lot of strain on the two purchasing agents: it is difficult to keep track of which departments need to be reminded about what at different points along the process.</p>
           </section>
 
-          <section id="purchasing-metrics">
+          <section id="inventory-metrics">
             <h3>Metrics &amp; Goals</h3>
 
             <p>Our primary goal in this area are twofold. We want to reduce the time it takes to look up information about a contract. We also want to help purchasing agents manage and update contract information.</p>
           </section>
 
-          <section id="purchasing-prototyping">
+          <section id="inventory-prototyping">
             <h3>Prototyping</h3>
 
             <p>Our prototyping around the first area began during build week in January. The problem of finding information about contracts came up in our very first conversation. We took the information from the original shared drive spreadsheet and added basic search functionality.</p>
@@ -501,10 +541,12 @@
             <p>One thing that has become clear through user testing is that the purchasing agents use their spreadsheets in very different ways, likely because a spreadsheet is not necessarily the best tool for the job. We have not landed on a perfect solution to the problem yet, but our initial prototypes have been met with good levels of enthusiasm.</p>
 
           </section>
-          <section id="purchasing-product">
+          <section id="inventory-product">
             <h3>Products</h3>
 
             <p>We took user feedback from our time back in Pittsburgh and created a new version of the search tool. We have renamed it <a href="https://pittsburgh-purchasing.herokuapp.com/wexplorer/">Scout</a>, because its role is to help you search and explore the contract landscape.</p>
+
+            <img src="assets/wexplorer_06012015.gif"><figcaption>With Scout, City purchasers can look up contracts without having to crack open their binders.</figcaption>
 
             <p>
               Core feature list:
@@ -520,6 +562,8 @@
 
             <p>We are starting to work on building out a tool we are calling <strong>Conductornn</strong>. Conductor will play a central role in the procurement suite that we are putting together.</p>
 
+            <img src="assets/purchasing_conductor.gif"><figcaption>Contracts drive procurement; Conductor drives contracts.</figcaption>
+
             <p>
               Core feature list:
               <ul>
@@ -533,7 +577,7 @@
             </p>
           </section>
 
-          <section id="purchasing-next-steps">
+          <section id="inventory-next-steps">
             <h3>Next Steps</h3>
             <p>
               Our next steps are mainly in product development and user testing:
@@ -596,6 +640,8 @@
             <li>Allegheny County Department of Purchasing</li>
             <li>African American Chamber of Commerce of Western Pennsylvania, the Center for Women&rsquo;s Entrepreneurship at Chatham University, and the many Pittsburgh business owners we interviewed</li>
           </ul></p>
+
+          <img src="assets/general_thankyounotes2.jpg">
         </section>
 
       <a href="#toc" class="skip-to-nav">Table of Contents</a>
